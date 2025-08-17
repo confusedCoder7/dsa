@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <vector>
-#include <utility>
+// #include <utility>
 using namespace std;
 
 int main() {
@@ -16,8 +16,12 @@ int main() {
     int u, v, weight;
     for(int i=0; i<edges; i++) {
         cin>>u>>v>>weight;
+        // both the following works
+
+        // adjList[u].push_back(make_pair(v, weight));
         adjList[u].push_back({v, weight});
-        adjList[v].push_back({u, weight});
+        adjList[v].push_back(make_pair(u, weight));
+        // adjList[v].push_back({u, weight});
     }
 
     // Print
