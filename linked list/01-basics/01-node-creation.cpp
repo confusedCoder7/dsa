@@ -27,19 +27,19 @@ class ListNode {
 
 int main() {
     // Static Node Creation (Stack)
-    // Node x;
-    // x.data = 4;
-    // x.next = NULL;
+    Node x;
+    x.data = 4;
+    x.next = NULL;
 
     // Dynamic Node Creation (Heap)
-    // Node *head = new Node();
-    // head->data = 40;
-    // head->next = NULL;
+    Node *head = new Node();
+    head->data = 40;
+    head->next = NULL;
 
     // Using Constructor
     Node *head;
     head = new Node(70);
-    // Node *head = new Node(70);
+    Node *head = new Node(70);
 
     return 0;
 }
